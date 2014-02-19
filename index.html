@@ -6,7 +6,7 @@
 				n1=parseInt(document.form.num1.value);
 				n2=parseInt(document.form.num2.value);
 				var ans=n1+n2;
-				document.getElementById("answer").innerHTML=(ans+'');
+				document.getElementById("answer").innerHTML=("Answer = "+ans);
 			}
 		</script>
 	</head>
@@ -15,7 +15,7 @@
 		<form name="form">
 			First number: <input type="text" name="num1"><br>
 			Second number: <input type="text" name="num2">
-			<button onclick="add()" >Add</button>
+			<button onclick="add();return false;" >Add</button>
 		</form>
 		<div id="answer"></div>
 	</body>
